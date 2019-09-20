@@ -72,19 +72,19 @@ limitations and issues that will be discussed below.
 This example works with an interrupt on the Teensy to measure the
 amount of time it takes, from the beginning of a refresh cycle until
 the interrupt is triggered to determine which button is pressed.
-On the Teensy 3.2 at 90Mhz using the FastLed library, it takes just
+On the Teensy 3.2 at 90Mhz using the WS2812Serial library, it takes just
 about 30 microseconds per LED.  So, basically, we just divide the
 number of microseconds to the interrupt by 30 and we get the "button number"
 of the (first/earliest) button that is pressed.
 
 This works well in the limited test program, which makes use of the
-FastLed, non-blocking, ws2812b library, which in turn uses DMA and
+WS2812Serial, non-blocking, ws2812b library, which in turn uses DMA and
 a hardware UART to send the bits to the LEDs. Because it is non-blocking,
 and it leaves interrupts enabled, we can use such an approach.
 
 ## THIS IDEA SHOULD WORK WITH ANY CPU and/or LIBRARY
 
-Although this demostration uses the FastLed library and Teensy 3.2,
+Although this demostration uses the WS2812Serial library and Teensy 3.2,
 this concept should be usable with ANY cpu that is currently used to
 control such a ws2812b, or other similar, addressable LED array, including
 Arduinos and Raspberry Pi's.
@@ -96,8 +96,8 @@ approach is available on my previous hackaday page [Why Doesn't Someone Make a w
 
 [![Previous Animation](images/anim.gif)](https://hackaday.io/page/6514-why-doesnt-someone-make-a-ws2812b-switch-array)
 
-In that example, and for other ws2812b libraries, like the Adafruit
-NeoPixel library, that send the bits to the LEDS synchronously (one by
+In that example, and for other ws2812b libraries, like the FastLEd or Adafruit
+NeoPixel libraries, that send the bits to the LEDS synchronously (one by
 one via the CPU), an alternative approach can be used if interrupts are
 disabled, or if so desired for some other reason.
 
