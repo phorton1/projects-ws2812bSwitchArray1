@@ -15,7 +15,7 @@ program (sketch) using a Teensy 3.2 and a commonly available
 demonstration program in action, and discussing briefly how the
 project works:
 
-[![YouTube Video Thumbnail](images/YouTubeImage.jpg)](https://www.youtube.com/watch?v=qGlxH-YuUHk)
+[![YouTube Video Thumbnail](images/YouTubeImage.jpg)](https://www.youtube.com/watch?v=zrMks7Vt0dI)
 
 **THIS IS ONLY A PROOF OF CONCEPT DEMONSTRATION**
 
@@ -32,7 +32,7 @@ There are a couple of major caveats:
   
 In this repository you can find the STL and Fusion 360 files for
 the 3D printed swtiches, along with the source code for the
-demostration program.   Please see the readme files in
+demonstration program.   Please see the readme files in
 the subdirectories for more information:
 
    [/stl - PRINTING THE SWITCHES](stl/readme.md)
@@ -84,14 +84,14 @@ and it leaves interrupts enabled, we can use such an approach.
 
 ## THIS IDEA SHOULD WORK WITH ANY CPU and/or LIBRARY
 
-Although this demostration uses the WS2812Serial library and Teensy 3.2,
+Although this demonstration uses the WS2812Serial library and Teensy 3.2,
 this concept should be usable with ANY cpu that is currently used to
 control such a ws2812b, or other similar, addressable LED array, including
 Arduinos and Raspberry Pi's.
 
 **It should also work with different sized arrays, LED strips, circles, etc**
 
-An earlier demostration of this idea, that used a synchronous detection
+An earlier demonstration of this idea, that used a synchronous detection
 approach is available on my previous hackaday page [Why Doesn't Someone Make a ws2812 Switch Array?](https://hackaday.io/page/6514-why-doesnt-someone-make-a-ws2812b-switch-array)
 
 [![Previous Animation](images/anim.gif)](https://hackaday.io/page/6514-why-doesnt-someone-make-a-ws2812b-switch-array)
