@@ -15,7 +15,7 @@ program (sketch) using a Teensy 3.2 and a commonly available
 demonstration program in action, and discussing briefly how the
 project works:
 
-[![YouTube Video Thumbnail](images/YouTubeImage.jpg)](https://www.youtube.com/watch?v=VhCiou5Uu70)
+[![YouTube Video Thumbnail](images/YouTubeImage.jpg)](https://www.youtube.com/watch?v=zrMks7Vt0dI)
 
 **THIS IS ONLY A PROOF OF CONCEPT DEMONSTRATION**
 
