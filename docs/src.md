@@ -39,26 +39,26 @@ Here's pretty much the whole H file:
 class ws2812SwitchArray
 {
 public:
-    
-    ws2812SwitchArray();  
+
+    ws2812SwitchArray();
     ~ws2812SwitchArray()  {}
-    
+
     void init();
     void showLeds();
- 
+
     void setPixel(int pixel_num, int color);
     void setPixel(int row, int col, int color);
     byte *getDrawingMemory();
-    
+
     int buttonPressed();
         // called at the top of the loop, before the next
         // call to showLeds() and after the previous one,
         // returns the one based button that was pressed,
         // if any.
-        
+
 protected:
 
-    static int button_pressed;                     // button pressed 
+    static int button_pressed;                     // button pressed
     static elapsedMicros show_time;                // microseconds since showLeds started
     static void buttonIRQ();
 
@@ -104,7 +104,7 @@ elapsedMicros ws2812SwitchArray::show_time = 0;       // microseconds since show
 int ws2812SwitchArray::button_pressed = 0;            // one based button pressed
 
 
-ws2812SwitchArray::ws2812SwitchArray() 
+ws2812SwitchArray::ws2812SwitchArray()
 {}
 
 
@@ -154,7 +154,7 @@ void ws2812SwitchArray::buttonIRQ()
     if (!button_pressed)
     {
         int the_time = show_time;
-        
+
         #if 0
             static int counter = 0;
             counter++;
@@ -186,7 +186,7 @@ call.
 
 
 There's a bit of debouncing and higher level logic in the
-**onLoop()** method in [demo_ui.cpp](demo_ui.cpp), but apart from
+**onLoop()** method in **demo_ui.cpp**, but apart from
 that, this is basically how it works.
 
 And finally, please note a couple of other things.

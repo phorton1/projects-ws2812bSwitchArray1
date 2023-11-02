@@ -23,21 +23,21 @@ There are a couple of major caveats:
 
 * The technology shown here *may* suffice for DIY purposes, but
   is probably not mature enough, yet, for use in commercial products.
-  
+
 * This project is not for the faint-of-heart.  The switches can be
   difficult to print and assemble, requiring the use of a 0.25 or
   smaller nozzle, lowered print speeds, and good filaments. Getting
   the size, and bends, in the guitar string spring/contacts takes
   a lot of patience and at least a few tries.
-  
+
 In this repository you can find the STL and Fusion 360 files for
 the 3D printed swtiches, along with the source code for the
 demonstration program.   Please see the readme files in
 the subdirectories for more information:
 
-   [/stl - PRINTING THE SWITCHES](stl/readme.md)
+   [/stl - PRINTING THE SWITCHES](stl.md)
 
-   [/src - THE DEMO PROGRAM](src/readme.md)
+   [/src - THE DEMO PROGRAM](src.md)
 
 This **github repository** is the authorative source of information about this project.
 There is also a Hackaday project at [One Wire 3D Printed ws2812 Switch Array](https://hackaday.io/project/167696-one-wire-3d-printed-ws2812b-switch-array)
@@ -117,7 +117,7 @@ Requirements:
 * a 0.010 high "E" guitar string
 * some hemostats or small needle nosed pliers to bend the guitar string
 
-[![3D Switch](images/resized_3d_switch_assembled.jpg)](stl/readme.md)
+[![3D Switch](images/resized_3d_switch_assembled.jpg)](stl.md)
 
 ### NOZZLE
 
@@ -185,7 +185,7 @@ bent just right in order to function.
 * the holes on the printed switch must be aligned so that the 22 guage wire
   just barely makes conact with the guitar spring when the switch is in an
   "open" position.
-  
+
 As I was experimenting, by the time I got it down to one piece of guitar string,
 by coincidence, I found that, if the holes were positioned JUST RIGHT, that I
 could slide a normal 22 guage solid copper breadboard wire into the holes and they
@@ -234,5 +234,3 @@ things like volume levels, patch selections, song position, etc, so I am thinkin
 general purpose controller of this sort could be handy.   It might also be useful for
 other purposes, including for use by disabled persons, so it is a project I will continue
 to explore.
-
-
